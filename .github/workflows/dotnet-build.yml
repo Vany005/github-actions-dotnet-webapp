@@ -9,7 +9,7 @@ on:
     - cron: "0 * * * *"
 
 jobs:
-  minha-acao:
+   send-alert:
     runs-on: ubuntu-latest
 
     steps:
