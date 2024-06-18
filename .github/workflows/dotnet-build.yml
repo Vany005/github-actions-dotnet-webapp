@@ -1,0 +1,21 @@
+name: Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  minha-acao:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: git checkout
+        uses: actions/checkout@v4 
+        
+      - name: Enviar Alerta de Push
+        run:
+         echo "Hello, World!"
